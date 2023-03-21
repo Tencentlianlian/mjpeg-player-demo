@@ -1,0 +1,35 @@
+<html>
+    <head>
+      <style>
+        .container{
+          width: 640px;
+          height: 480px;
+          background: #000;
+        }
+      </style>
+    </head>
+    <body>
+        <!-- <img id="image" width="640" height="480"/>
+        <canvas id="canvas" width="640" heigth="480"></canvas> -->
+          <div class="container"></div>
+        <div id="play">
+          播放 ▶️ 
+        </div>
+        <div id="pause">
+          暂停 ⏸️ 
+        </div>
+        <div>
+          <input type="range" style="width: 300px" readonly min="0" max="100" value="0" id="progress">
+        </div>
+
+        <script src="main.js" type="module"></script>
+        <!-- <script>
+          fetch('./images.jpeg').then(res => res.blob()).then(blob => {
+            const url = URL.createObjectURL(blob, {type: TYPE_JPEG});
+            const img = new Image();
+            img.src= url;
+            document.body.appendChild(img);
+          })
+        </script> -->
+    </body>
+</html>
